@@ -1,0 +1,19 @@
+.link {
+    color: white; /* Yazı rengi beyaz */
+    background-color: turquoise; /* Arka plan rengi turkuaz */
+    padding: 10px 20px; /* İç boşluk */
+    text-decoration: none; /* Alt çizgi yok */
+    border-radius: 5px; /* Köşeleri yuvarlaştır */
+    display: inline-block; /* Blok eleman gibi davran */
+}
+
+.link:hover {
+    background-color: #46a097; /* Üzerine gelince renk değişimi */
+    text-decoration: none;
+    color: white;
+}
+
+.highlight {
+    font-size: 1.5em; /* İlk satırı daha büyük yapmak için */
+    font-weight: bold; /* Kalın yazı */
+}
