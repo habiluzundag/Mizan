@@ -42,7 +42,3 @@ function loadData(branchName) {
         console.error("Veri çekme hatası:", error);
     });
 }
-
-// Örnek olarak '15' ve 's23' için veri yükleme
-loadData('15'); // '15' dalından veriyi yükle
-loadData('s23'); // 's23' dalından veriyi yükle
