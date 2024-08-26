@@ -1,19 +1,24 @@
 .link {
-    color: white; /* Yazı rengi beyaz */
-    background-color: turquoise; /* Arka plan rengi turkuaz */
-    padding: 10px 20px; /* İç boşluk */
-    text-decoration: none; /* Alt çizgi yok */
-    border-radius: 5px; /* Köşeleri yuvarlaştır */
-    display: inline-block; /* Blok eleman gibi davran */
+    color: white; 
+    background-color: turquoise; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    display: inline-block; 
 }
 
 .link:hover {
-    background-color: #46a097; /* Üzerine gelince renk değişimi */
+    background-color: #46a097; 
     text-decoration: none;
     color: white;
 }
 
 .highlight {
-    font-size: 1.5em; /* İlk satırı daha büyük yapmak için */
-    font-weight: bold; /* Kalın yazı */
+    font-size: 1.5em; 
+    font-weight: bold; 
+}
+
+.form-inline{
+    margin: 0 auto;
+    
 }
