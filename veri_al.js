@@ -1,4 +1,3 @@
-// Firebase yapılandırması
 const firebaseConfig = {
     apiKey: "AIzaSyBUpAoBrJUXSu8QvSgdgbxgtb8TyRi2-Sk",
     authDomain: "fiyat-55130.firebaseapp.com",
@@ -16,7 +15,7 @@ firebase.initializeApp(firebaseConfig);
 // Belirli bir dalı yükle ve tabloya veriyi ekle
 function loadData(branchName) {
     var database = firebase.database();
-    database.ref(`/json_files/${branchName}`).once('value').then(function(snapshot) {
+    database.ref(`/json_files/product/${branchName}`).once('value').then(function(snapshot) {
         var data = snapshot.val();
         console.log(data); // JSON verisini konsola yazdır
 

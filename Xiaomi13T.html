@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mizan</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="veri_al.js" defer></script>
+    <link rel="stylesheet" href="styless.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+</head>
+<body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg " style="background-color:rgb(107, 74, 51);" >
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html" style="color:whitesmoke;">MİZAN</a>
+      
+        <!-- Links -->
+        <ul class="navbar-nav">
+          
+      
+          <!-- Dropdown -->
+          <li class="nav-item dropdown" >
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color: white; font-size: 20px;">
+              Katagoriler
+            </a>
+            <div class="dropdown-menu" style="width: 500px; height: 360px; background-color:white;">
+              <h4 >Telefon</h4>
+              <h5 >- Apple</h5>
+              <a class="dropdown-item" href="Iphone_15.html"> - Iphone 15</a>
+              <h5 >- Samsung</h5>
+              <a class="dropdown-item" href="s23.html"> - Samsung S23</a>
+              <h5 >- Xiaomi</h5>
+              <a class="dropdown-item" href="Xiaomi13T.html"> - Xiaomi 13T</a>
+              <a class="dropdown-item" href="Xiaomi14.html"> - Xiaomi 14</a>
+              <h4 >Bilgisayarlar</h4>
+            
+            <h4>Elektronikler</h4>
+            <a  class="dropdown-item" href="#">Kulaklık</a>
+            <a  class="dropdown-item" href="#">Süpürge</a>
+            <a  class="dropdown-item" href="#">Kahve Makinesi</a>
+      
+            </div>
+          </li>
+        </ul>
+      <div style="margin-left:150px ;">
+      <form class="form-inline" action="#">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+      </form>
+      </div>
+      </nav>
+        <div class="container text-center">
+            <a href="#" onclick="loadData('telefonlar/Xiaomi/xiaomi13T')" title="Xiaomi 13T">
+                <img src="product/telefonlar/Xiaomi/xiaomi13T.jpg" alt="Xiaomi 13T" style="height: 300px; width: auto; ">
+            </a>
+            <h1>Xiaomi 13T</h1>
+</div>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Site Logo</th>
+                <th>Fiyat</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody id="output">
+            <!-- Veriler buraya eklenecek -->
+        </tbody>
+    </table>
+</div>
+        </div> 
+        <script>
+          // Sayfa yüklendiğinde loadData fonksiyonunu çağır
+          window.onload = function() {
+              loadData('telefonlar/Xiaomi/xiaomi13T');
+          };
+        </script>
+</body>
+</html>
